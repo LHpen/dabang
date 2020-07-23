@@ -2,6 +2,7 @@ var items = document.getElementsByClassName('item') // 点
 var goPreBtn = document.getElementById('goPre')
 var goNextBtn = document.getElementById('goNext')
 var points  = document.getElementsByClassName('point') //图片
+var time = 0 // 定时器
 
 var index = 0 ;//表示第几张图片索引
 
@@ -50,3 +51,22 @@ goNextBtn.addEventListener('click',function(){
 goPreBtn.addEventListener('click',function(){
     goPre()
 } )
+
+for (var i= 0; i <points.length ; i ++) {
+    points[i].addEventListener('click', function(){
+        // 返回属性的值
+        var pointIndex = this.getAttribute('data-index')
+        index = pointIndex
+        goIndex()
+        time = 0
+    })
+}
+
+// 定时器
+setInterval(function(){
+    time ++;
+    if(time == 30 ){
+        goNext()
+        time=0
+    }
+},150)
