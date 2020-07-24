@@ -255,20 +255,67 @@
 
 /* 公司发展沿革 */
 .development {
-    height: 600px;
+    height: 750px;
     width: 100%;
     background-image: url('./image/background_2.jpg');
+    position: absolute;    
 }
 
-.development span{
+.development_text{
     margin:  0 auto  ;
     width: 1200px;
     display: block;
     text-align: left;
     font-size: 36px;
-}
+} 
 
 .development_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .evolution {
+    padding-top: 80px;
+}
+
+.evolution_text {
+    position: relative;
+    left: 410px;
+    bottom: 200px;
+    color: #fff;
+}
+.evolution_text span{
+    display: inline-block;
+    margin-right: 80px;
+    width: 160px;
+}
+
+.evolution_span {
+    position: relative;
+    left: 380px;
+    bottom: 200px;
+    color: #fff;
+}
+.evolution_text_1 {
+    position: relative;
+    left: 380px;
+    bottom: 100px;
+    color: #fff;
+
+}
+
+.evolution_text_1 span{
+    display: inline-block;
+    margin-right: 80px;
+    width: 160px;
+    font-size: 19px;
+}
+
+.evolution_text_2{
+    position: relative;
+    left: 660px;
+    bottom: 350px;
+    color: #fff;
+    width: 200px;
 }
