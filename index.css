@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /* 公共属性元素 */
 .container {
@@ -87,6 +88,8 @@
     width: 100%;
     height: 800px;
     position: relative;
+    overflow: hidden;
+
 }
 .list {
     width: 100%;
@@ -258,7 +261,7 @@
     height: 750px;
     width: 100%;
     background-image: url('./image/background_2.jpg');
-    position: absolute;    
+    position: relative;
 }
 
 .development_text{
@@ -284,6 +287,7 @@
     left: 410px;
     bottom: 200px;
     color: #fff;
+    display: inline;
 }
 .evolution_text span{
     display: inline-block;
@@ -302,20 +306,191 @@
     left: 380px;
     bottom: 100px;
     color: #fff;
+    display: inline;
+
+}
+
+.evolution_text_1{
+    position: absolute;
+    bottom: 45px;
 
 }
 
 .evolution_text_1 span{
-    display: inline-block;
-    margin-right: 80px;
-    width: 160px;
-    font-size: 19px;
+    margin-right: 180px;
+    font-size: 17px;
 }
-
 .evolution_text_2{
     position: relative;
     left: 660px;
     bottom: 350px;
     color: #fff;
     width: 200px;
+}
+
+/* 动态咨询 */
+
+.Information {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: initial;
+}
+
+.Information_title {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+}
+
+.Information_list {
+    width: 100%;    
+    height: 600px;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    flex-wrap:wrap
+    
+}
+
+.Information_item {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.Information_item img {
+    width: 100%;
+    height: 150px;
+    background-color: chocolate;
+}
+
+.Information_item_text {
+    position: absolute;
+    bottom: 55px;
+    left: 9px;
+    color: #fff;
+    font-size:13px;
+    width: 300px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+ 
+.Information_item a:hover {
+    color: red;
+}
+
+.Information_item_div {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #878787;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+/* 合作伙伴 */
+
+.partner {
+    height: 380px;
+    width: 100%;
+   background-image: url('./image/background_4.png');
+}
+
+.partner_text {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.partner_text_img img{
+    width: 150px;
+    height: 70px;
+    padding-right: 10px;
+}
+
+
+
+/* 尾部 */
+.footer {
+    background-image: url('./image/background_5.jpg');
+    height: 200px;
+}
+
+.ft_container{
+    display: flex;
+}
+
+.Telephone {
+    height: 200px;
+    width: 200px;
+    /* background-color: seagreen; */
+    padding-top: 40px;
+}
+
+.Telephone_name {
+    color: rgb(169, 169, 169);
+}
+
+.Telephone_number {
+   padding: 15px 30px;
+   color: #fff;
+   font-weight: bold;
+}
+
+
+
+.footer_navigation {
+    font-size: 14px;
+    color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.footer_navigation_one {
+    padding-left: 150px;
+    color: #fff;
+}
+.footer_navigation_one a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+.footer_navigation_two {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+
+}
+
+.footer_navigation_three {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+    margin: 10px 0;
+}
+
+.code {
+    padding-top: 45px;
+    padding-left: 200px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+.code span {
+    display: block;
+    padding-top: 5px;
+    text-align: center;
 }
