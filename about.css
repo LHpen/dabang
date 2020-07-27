@@ -83,259 +83,187 @@
     margin-right:50px ;
 }
 
-/* 轮播图 */
-.wrap {
-    width: 100%;
-    height: 800px;
-    position: relative;
-    overflow: hidden;
 
-}
-.list {
-    width: 100%;
-    height: 400px;
-    list-style: none;
-    position: relative;
-    
-}
-.list img {
-    width: 100vw;
-    height: 650px;
-}
-
-
-.item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 1s;
-
-}
- 
-
-.btn {
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    top: 370px;
-    z-index: 100;
-}
-
-#goPre {
-    left: 0px;
-}
-
-#goNext {
-    right: 0px;
-}
-
-.item.active {
-    z-index: 10;
-    opacity: 1;
-}
-
-.pointList {
-    padding-left: 400px;
-    list-style: none;
-    position: absolute;
-    bottom: 10px;
-    right: 950px;
-    z-index: 120;
-}
-
-.point {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(0, 0, 0,0.4);
-    border-radius: 100%;
-    float: left;
-    margin-right: 18px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(255, 255, 255,0.6);
-    cursor: pointer;
-}
-
-.point.active {
-    background-color: rgb(255, 255, 255);
-}
-
-
-/* 关于我们 */
-.about_1 {
-    display: block;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 36px;
-    font-family: fontface__思源宋体Heavy__16__55308188365;
-    color: #353535;
-}
-
-.about_2 {
-    display: block;
-    font-size: 16px;
-    font-family: 微软雅黑, "Microsoft YaHei";
-    color: #666;
-    text-indent:2em;
-    line-height: 32px;
-}
-
-.about_image div {
-    float: left;
-    width: 400px;
-    height: 260px;
-    
-}
-
-.about_image img {
-    
-    width: 320px;    
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
-.about_image button{
-    font-size: 14px;
-    background: #f1313a;
-    color: #fff;
-    height: 40px;
-    width: 160px;
-    border-radius: 5px;
-    cursor: pointer;
-    line-height: 40px;
-    border-color: seashell;
-    display: block
-}
-
-/* 产品与服务 */
-.product {
-    width: 100%;
-    height: 750px;
-    margin-top: 10px;
-}
-
-.product_1 {
-    width: 100%;
+/* 背景图_1 */
+.background_1 {
     height: 300px;
-    margin-top: 10px;
-    background-image: url('./image/background.jpg');
+    width: 100%;
 }
 
-.product_text {
-    font-size: 23px;
-    display: block;
-    text-align: center;    
-    padding-top: 120px;
-    color: #353535;
-}
+/* 公司简介 */
 
-.producut_image {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
+.synopsis {
+    height: 500px;
+    overflow: hidden;
 }
-
-.producut_image div {
-    position: relative; 
-    padding-right: 10px;
-}
-
-.producut_img{
-    width: 277px;
-    height: 480px;
-    position: absolute;
-    top: -100px;
-}
-
-.producut_img1 {
-    height: 100px;
-    width: 277px;
-    background-image: url('./image/background_product.png');
+.synopsis_one {
+    font-size: 14px;
+    color: #666666;
+    padding-top: 30px;
+    padding-left: 10px;
     
 }
 
-.producut_img1  span{
-    display: block;
-    text-align: center;
-    color: #ffff;
+.synopsis_two {
+    padding-top: 20px;
 }
 
-/* 公司发展沿革 */
-.development {
-    height: 750px;
-    width: 100%;
-    background-image: url('./image/background_2.jpg');
-    position: relative;
-}
-
-.development_text{
-    margin:  0 auto  ;
-    width: 1200px;
+.synopsis_three_head {
     display: block;
-    text-align: left;
     font-size: 36px;
-} 
+    padding: 20px 0px;
+}
 
-.development_image{
+.synopsis_three_content {
+    width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+
+}
+
+.three_content_1 span {
+    display: block;
+    width: 620px;
+    text-indent: 2em;
+    color: #666666;
+    text-indent:2em
+}
+
+.three_content_img {
+    position: absolute;
+    top:-200px;
+    right: 0px;
+    z-index: -1;
 }
 
 .evolution {
-    padding-top: 80px;
+    width: 100%;
+    height: 900px;
+    background-image: url('./image/about/background1.jpg');
+}
+
+.evolution_content {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .evolution_text {
-    position: relative;
-    left: 410px;
-    bottom: 200px;
-    color: #fff;
-    display: inline;
-}
-.evolution_text span{
-    display: inline-block;
-    margin-right: 80px;
-    width: 160px;
+    padding-top: 90px;
 }
 
-.evolution_span {
-    position: relative;
-    left: 380px;
-    bottom: 200px;
-    color: #fff;
-}
-.evolution_text_1 {
-    position: relative;
-    left: 380px;
-    bottom: 100px;
-    color: #fff;
-    display: inline;
-
+.evolution_text_red {
+    color: rgb(228, 2, 50);
+    font-size: 36px;
 }
 
-.evolution_text_1{
+.evolution_text_white {
+    font-size: 36px;
+    font-weight: 20px;
+    color: white;
+}
+
+.evolution_background{
+    position: relative;
+}
+
+.evolution_background_img_text {
+    font-size: 16px;
+}
+
+.evolution_background_img_text_1{
+    font-size: 1.4em;
     position: absolute;
-    bottom: 45px;
+    top: 190px;
+    right: 210px;
+    color: #666666;
 
 }
 
-.evolution_text_1 span{
-    margin-right: 180px;
-    font-size: 17px;
-}
-.evolution_text_2{
-    position: relative;
-    left: 660px;
-    bottom: 350px;
-    color: #fff;
-    width: 200px;
+.evolution_background_img_text_1-1{
+    font-size: 16px;
+    position: absolute;
+    top: 80px;
+    right: 190px;
+    color: white;
+
 }
 
-/* 动态咨询 */
 
+.evolution_background_img_text_2{
+    position: absolute;
+    top: 376px;
+    right: 340px;
+    font-size: 1.5em;
+    color: #666666;
+}
+
+.evolution_background_img_text_2-2{
+    width: 250px;;
+    position: absolute;
+    top: 500px;
+    right: 220px;
+    font-size: 16px;
+    color: white
+}
+
+.evolution_background_img_text_3{
+    position: absolute;
+    top: 166px;
+    right: 510px;
+    color: #666666;
+    font-size: 1.8em;
+
+}
+
+.evolution_background_img_text_3-3 {
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+    right: 400px;
+    color: white
+
+}
+.evolution_background_img_text_4{
+    position: absolute;
+    top: 426px;
+    right: 680px;
+    color: #666666;
+    font-size: 2em;
+
+}
+
+.evolution_background_img_text_4-4 {
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    top: 560px;
+    right: 580px;
+    color: white
+}
+.evolution_background_img_text_5{
+    position: absolute;
+    top: 185px;
+    right: 910px;
+    font-size: 2.5em;
+    color: #666666;
+
+}
+
+.evolution_background_img_text_5-5 {
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+    right: 810px;
+    color: white
+}
+
+.evolution_background_img_text_ span {
+    color: #e40232;
+}
+
+/* 公司荣誉 */
 .Information {
     width: 1200px;
     height: 800px;
@@ -361,7 +289,6 @@
 
 .Information_item {
     width: 300px;
-    height: 200px;
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
