@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* 公共属性元素 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部 */
+.header {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.logo span{
+    width: 210px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    width: 880px;
+    height: 110px;
+    align-items: center;
+
+}
+
+.nav_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul {
+    list-style:none;
+    display: flex;
+    flex: 1;
+}
+
+.nav li {
+    justify-content: center;
+    margin-left: 5px;
+    
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav li a:hover{
+    color: red;
+}
+
+.nav_bar {
+    background-image: linear-gradient(red,red);
+    background-position: center bottom;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.nav_bar:hover{
+    background-size: 100% 2px;
+}
+
+.nav div{
+    height: 80xpx;
+    margin-right:50px ;
+}
+
+
+/* 背景图_1 */
+.background_1 {
+    height: 300px;
+    width: 100%;
+}
+
+
+/* 联系我们 */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contact_one {
+    padding-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact_two {
+    font-size: 26px;
+    color: rgb(216, 27, 67);
+    text-align: center;
+}
+
+.contact_three {
+    color:rgb(169, 169, 169);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 尾部 */
+.footer {
+    background-image: url('./image/background_5.jpg');
+    height: 200px;
+}
+
+.ft_container{
+    display: flex;
+}
+
+.Telephone {
+    height: 200px;
+    width: 200px;
+    /* background-color: seagreen; */
+    padding-top: 40px;
+}
+
+.Telephone_name {
+    color: rgb(169, 169, 169);
+}
+
+.Telephone_number {
+   padding: 15px 30px;
+   color: #fff;
+   font-weight: bold;
+}
+
+
+
+.footer_navigation {
+    font-size: 14px;
+    color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.footer_navigation_one {
+    padding-left: 150px;
+    color: #fff;
+}
+.footer_navigation_one a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+.footer_navigation_two {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+
+}
+
+.footer_navigation_three {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+    margin: 10px 0;
+}
+
+.code {
+    padding-top: 45px;
+    padding-left: 200px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+.code span {
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#del_a,a:hover{ text-decoration:none; color:white}
