@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* 公共属性元素 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部 */
+.header {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.logo span{
+    width: 210px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    width: 880px;
+    height: 110px;
+    align-items: center;
+
+}
+
+.nav_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul {
+    list-style:none;
+    display: flex;
+    flex: 1;
+}
+
+.nav li {
+    justify-content: center;
+    margin-left: 5px;
+    
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav li a:hover{
+    color: red;
+}
+
+.nav_bar {
+    background-image: linear-gradient(red,red);
+    background-position: center bottom;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.nav_bar:hover{
+    background-size: 100% 2px;
+}
+
+.nav div{
+    height: 80xpx;
+    margin-right:50px ;
+}
+
+
+/* 背景图_1 */
+.background_1 {
+    height: 300px;
+    width: 100%;
+}
+
+
+/* 产品与服务 */
+.container_product {
+    height: 850px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container_head {
+    font-size: 13px;
+    color: #666;
+    padding-top: 20px;
+}
+
+.product_container_head{
+    text-align: center;
+    padding: 90px 0 30px;
+    font-size: 30px;
+
+}
+
+.product_img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_img_text {
+    color: #d81b43;
+    display: block;
+    padding: 30px 20px;
+}
+
+
+.product_img_content{
+    display: inline-block;
+    width: 200px;
+    margin-left: 20px;
+    color: #666;
+}
+
+.product_1{
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/product.jpg);
+}
+
+.product_2 {
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/2.jpg);
+}
+
+.product_3 {
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/3.jpg);
+}
+
+.product_4 {
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/3.jpg);
+}
+.product_4 {
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/4.jpg);
+}
+.product_5 {
+    width: 300px;
+    height: 280px;
+    background-image: url(./image/product/5.jpg);
+}
+
+
+.major {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.major_text {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: fontface__思源宋体heavy__16__1277592223028;
+}
+
+.major_text2 {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    width: 800px;
+    margin-left: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.major_imag {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.major_img {
+    width: 260px;
+    height: 260px;
+    background-image: url('./image/product/background_2.jpg');
+    margin-left: 10px;
+    margin: 30px 20px;
+}
+
+.major_img_text {
+    color:#d81b43;
+    font-style: 15px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.heng {
+    width: 50px;
+    height: 1px;
+    background-color: #d81b43;
+    margin: 0  0 20px 20px;
+}
+
+.major_img_content {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* 我们的优势 */
+
+.advantage {
+    margin: 0 auto;
+    background-image: url('./image/product/background_3.png');
+}
+
+.advantage_text {
+    font-size: 32px;
+    color: #252525;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+.advantage_img {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+
+}
+
+.advantage_img_content {
+    padding-top: 50px;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantage_img_content_head {
+    font-size: 16px;
+    color: #666666;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+.advantage_img_content_text {
+    font-size: 12px;
+    color: #666666;
+}
+
+
+/* 尾部 */
+.footer {
+    background-image: url('./image/background_5.jpg');
+    height: 200px;
+}
+
+.ft_container{
+    display: flex;
+}
+
+.Telephone {
+    height: 200px;
+    width: 200px;
+    /* background-color: seagreen; */
+    padding-top: 40px;
+}
+
+.Telephone_name {
+    color: rgb(169, 169, 169);
+}
+
+.Telephone_number {
+   padding: 15px 30px;
+   color: #fff;
+   font-weight: bold;
+}
+
+
+
+.footer_navigation {
+    font-size: 14px;
+    color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.footer_navigation_one {
+    padding-left: 150px;
+    color: #fff;
+}
+.footer_navigation_one a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+.footer_navigation_two {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+
+}
+
+.footer_navigation_three {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 150px;
+    margin: 10px 0;
+}
+
+.code {
+    padding-top: 45px;
+    padding-left: 200px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+.code span {
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#del_a,a:hover{ text-decoration:none; color:white}
