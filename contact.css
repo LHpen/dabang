@@ -95,6 +95,7 @@
 .content {
     width: 1200px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .contact_one {
@@ -116,20 +117,42 @@
     padding-top: 20px;
 }
 
+.from_conten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
 
+.from_text {
+    display: block;
+    color: #666;
+    font-size: 20px;
 
+}
 
+.from_item {
+    width: 500px;
+    height: 100px;
+}
 
+ .from_item input {
+    display: block;
+    width: 100%;
+    height: 40px;
+     border: 2px solid #f0f0f0;
+ }
 
-
-
-
-
-
-
-
-
-
+.from_conten button {
+    color: rgb(255, 255, 255);
+    display: block;
+    background-color: #F54F4F;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: rgb(169, 169, 169);
+}
 
 
 
