@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="information.css">
+    <link rel="stylesheet" href="details.css">
+    <title>detalist</title>
+    <script src="https://imgcache.qq.com/qcloud/tcbjs/1.3.5/tcb.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
+    <script>
+      const app = tcb.init({
+        env: "mc-z-153342" // 此处填入您的环境ID
+      });
+      app
+        .auth()
+        .signInAnonymously()
+        .then(() => {
+        //   alert("登录云开发成功！");
+          const db = app.database();
+          const userDb = db.collection('article');
+          userDb.get().then(item => {
+              console.log("数据库返回",item.data[0])
+              document.getElementById('title').innerHTML= item.data[0].title
+             document.getElementById('createTime').innerHTML= item.data[0].createTime
+            document.getElementById('content') .innerHTML = item.data[0].content
+            $(document).ready(function() {
+            var content = $("#content").text(); //获取md文本内容
+            var converter = new showdown.Converter(); //初始化转换器
+            var htmlcontent = converter.makeHtml(content); //将MarkDown转为html格式的内容
+            $("#content").html(htmlcontent);
+        }); 
+
+
+          })
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header container">
+        <div class="logo">
+            <img src="./logo.jpg" alt="Logo">
+            <span>传承客家文化，聚焦陆河新鲜事。
+                发扬陆河装饰之乡的工匠精神。</span>
+        </div>
+        <div class="header container">
+            <div class="nav">
+                <ul class="nav_">
+                    <div>
+                        <li class="nav_bar"><a href="./index.html">首页</a></li>
+                    </div>
+                    <div>
+                        <li class="nav_bar"><a href="./about.html">关于我们</a></li>
+                    </div>
+                    <div>
+                        <li class="nav_bar"><a href="./product.html">产品与服务</a></li>
+                    </div>
+                    <div>
+                        <li class="nav_bar"><a href="./information.html">新闻资讯</a></li>
+                    </div>
+                    <div>
+                        <li class="nav_bar"><a href="./contact.html">联系我们</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 背景图 -->
+    <div class="background_1">
+        <img src="image/information/background.png">
+    </div>
+
+    <!-- 内容 -->
+
+    <div class="container">
+        <div class="title">
+            <p id=title></p>
+        </div>
+        <div class="createTime">
+            <p id=createTime>
+                发表时间：2020-03-17 14:58
+            </p>
+        </div>
+        <div><img src="./image/about/background_1.png"></div>
+
+        <div class="content" id="content">
+            ddd这一次，陆河首部方言剧《我的村，我的家》终于快要走进大家的视野里了。小编可以说是相当激动了，毕竟这是我们大陆河的第一部方言剧！
+
+            拍摄前的筹备，寻找合适的演员，寻找志同道合的团队，寻找所有能让这部剧变得更加完美的因素，我们花了一年多近两年的时间，在准备了这么长的时间之后，我们终于开始了我们《我的村，我的家》的拍摄。
+            
+            常看到网上说演员不容易，当时我想的是在机器面前展露演技是难点，直到我真的去目睹了拍摄现场，才知道，这种苦，到底有多苦！
+            
+            小的时候，小编的梦想跟很多人一样，想成为一个家喻户晓的演员，到慢慢长大，慢慢觉得这些虚无缥缈的梦想越走越远了。有幸参加这次电视剧的部分拍摄。才知道电视上那些光鲜亮丽的演员光鲜亮丽的背后，是整个剧组付出的辛酸。
+            
+            
+            小编在现场的那天，室外气温高达42摄氏度，，全剧组工作人员顶着火辣的大太阳，从早上一直拍到傍晚，眼神透露出那种的坚定，让我不由得为之动容，扛着笨重的器材，一个个像是不知疲倦的战士，他们不约而同地在和恶劣的天气做斗争。这一天，在场的所有人，没有任何一个人说过一个“累”字。后来我还专门去问了一个跟我年纪差不多的小兄弟，他只是说了一句：“习惯了，更艰苦的比比皆是。”
+            
+            就算是这么热的天，大家基本上也得把衣服穿的严严实实的，因为，这里的蚊子，太，凶，啦！！！
+            
+            
+            在经历了一个月的
+            
+            艰苦拍摄后
+            
+            我们终于
+            
+            完成了这部剧的拍摄！
+            
+            故事讲述的是发生在陆河七、八十年代陆河艰苦创业，事业有成最后回家乡投资发展的故事。剧中的主人翁陈杰家庭非常贫困，为了生存，为了创业，他决定外出寻找机会，通过几十年的打拼，吃尽了苦头，饱受过人间冷暖，如今事业有成，回想起曾经与自己一起长大的伙伴情结，老师曾经敦敦的教诲，回想起家乡人民曾经对自己的帮助，陈杰决定回家乡陆河投资发展，回报家乡。
+            
+            （年轻帅气的陆河新生代导演彭家轩携手新戏与香港著名演员林子雄，黄一山等合作。并且带着作品《我的村我的家》出席了杭州首屆紹兴柯桥新鋭电影节。）
+            
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+<div class="footer">
+    <div class="container">
+      <div class="ft_container"> 
+      <div class="Telephone">
+        <div class="Telephone_name">联系热线：</div>
+        <div class="Telephone_number">18946902313</div>
+        <div class="Telephone_name">咨询微信：</div>
+        <div class="Telephone_number">18946902313</div>
+      </div>
+      <div class="footer_navigation">
+        <div class="footer_navigation_one">
+        <a href="./index.html">首页</a>
+        <a href="">/</a>
+        <a href="./about.html">关于我们</a>
+        <a href="">/</a>
+        <a href="./product.html">产品与服务</a>
+        <a href="">/</a>
+        <a href="./information.html">新闻资讯</a>
+        <a href="">/</a>
+        <a href="./contact.html">联系我们</a>
+      </div>
+      <div class="footer_navigation_two">
+        <div>联系地址： 广东省汕尾市陆河县城中心城滨河路吉康华苑南门75号</div>
+      </div>
+      <div class="footer_navigation_three">
+        <div>©版权所有陆河达邦文化传媒有限公司
+        </div>
+        <img src="./image/huizhang.png" alt=""><a id="del_a" href="http://icp.chinaz.com/home/info?host=lhwsh.net" target='_blank'> 粤ICP备19070563号-1</a>
+      </div>
+      </div>
+      <div class="code">
+        <img src="./image/QR.jpg">
+        <span>关注公众号</span>
+        <span>了解更多资讯</span>
+      </div>
+    </div>
+  </div>
+</div>
