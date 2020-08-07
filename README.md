@@ -10,28 +10,28 @@
 
 首页：
 
-![image-20200807172635025](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172635025.png)
+![image-20200807172635025](img/image-20200807172635025.png)
 
 
 
 关于我们：
 
-![image-20200807172703641](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172703641.png)
+![image-20200807172703641](img/image-20200807172703641.png)
 
 
 
 产品与服务：
 
-![image-20200807172721550](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172721550.png)
+![image-20200807172721550](img/image-20200807172721550.png)
 
 
 
 新闻资讯：
 
-![image-20200807172734000](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172734000.png)
+![image-20200807172734000](img/image-20200807172734000.png)
 
-![image-20200807172849811](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172849811.png)
+![image-20200807172849811](img/image-20200807172849811.png)
 
 联系我们：
 
-![image-20200807172752753](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20200807172752753.png)
+![image-20200807172752753](img/image-20200807172752753.png)
