@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="information.css">
     <title>information</title>
+    <script src="https://imgcache.qq.com/qcloud/tcbjs/1.3.5/tcb.js"></script>
+    <script>
+        const app = tcb.init({
+          env: "mc-z-153342" // 此处填入您的环境ID
+        });
+        app
+          .auth()
+          .signInAnonymously()
+          .then(() => {
+          //   alert("登录云开发成功！");
+            const db = app.database();
+            const userDb = db.collection('article');
+            userDb.get().then(item => {
+              document.getElementById('details').innerHTML= item.data[0].title
+              document.getElementById('details0') .innerHTML = item.data[0].content
+              document.getElementById('details1').innerHTML= item.data[1].title
+              document.getElementById('details1_1') .innerHTML = item.data[1].content
+
+              document.getElementById('details2').innerHTML= item.data[2].title
+              document.getElementById('details2_2') .innerHTML = item.data[2].content
+
+              document.getElementById('new_1').innerHTML= item.data[0].title
+              document.getElementById('new_1_1').innerHTML = item.data[0].content
+              
+
+              document.getElementById('new_2').innerHTML= item.data[1].title
+              document.getElementById('new_2_2') .innerHTML = item.data[1].content
+
+              document.getElementById('new_3').innerHTML= item.data[2].title
+              document.getElementById('new_3_3') .innerHTML = item.data[2].content
+
+
+  
+            })
+          });
+  
+      </script>
 </head>
 
 <body>
@@ -56,11 +93,11 @@
                     </div>
                     <div class="FenGe"></div>
                     <div class="information_item_content">
-                        <a class="information_item_content_head" href="details.html">
-                            陆河首部方言剧《我的村，我的家》就要走进你的视野
+                        <a class="information_item_content_head" href="details.html" id="details">
+                            陆河首部方言剧《我的村，我的家》就要走进你的视野了，你准备好了吗？
                         </a>
-                        <div class="information_item_content_introduce">
-                            这一次，陆河首部方言剧《我的村，我的家》终于快要走进大家的视野里了。小编可以说是相当激动了，毕竟这是我们大陆河的第一部方言剧！拍摄前的筹备，寻找合适的演员，寻找志同道合的团队，寻找所有能让这部剧变得更加完美的因素，我们花了一年多近两年的时间
+                        <div class="information_item_content_introduce" id="details0">
+                            这一次，陆河首部方言剧《我的村，我的家》终于快要走进大家的视野里了。小编可以说是相当激动了，毕竟这是我们大陆河的第一部方言剧！ 拍摄前的筹备，寻找合适的演员，寻找志同道合的团队，寻找所有能让这部剧变得更加完美的因素，我们花了一年多近两年的时间，在准备了这么长的时间之后，我们终于开始了我们《我的村，我的家》的拍摄。 常看到网上说演员不容易，当时我想的是在机器面前展露演技是难点，直到我真的去目睹了拍摄现场，才知道，这种苦，到底有多苦！ 小的时候，小编的梦想跟很多人一样，想成为一个家喻户晓的演员，到慢慢长大，慢慢觉得这些虚无缥缈的梦想越走越远了。有幸参加这次电视剧的部分拍摄。才知道电视上那些光鲜亮丽的演员光鲜亮丽的背后，是整个剧组付出的辛酸。 ![微信图片_20200321143030.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAgo_nW8wUo4MONhQYwuAg48wU!600x600.jpg) 小编在现场的那天，室外气温高达42摄氏度，，全剧组工作人员顶着火辣的大太阳，从早上一直拍到傍晚，眼神透露出那种的坚定，让我不由得为之动容，扛着笨重的器材，一个个像是不知疲倦的战士，他们不约而同地在和恶劣的天气做斗争。这一天，在场的所有人，没有任何一个人说过一个“累”字。后来我还专门去问了一个跟我年纪差不多的小兄弟，他只是说了一句：“习惯了，更艰苦的比比皆是。” ![微信图片_20200321143131.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAg3enW8wUorPCS2gEwuAg4qgY!600x600.jpg) 就算是这么热的天，大家基本上也得把衣服穿的严严实实的，因为，这里的蚊子，太，凶，啦！！！ ![微信图片_20200321143330.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAg5_rW8wUo8OLt0gIwiAY43wM!600x600.jpg) ![微信图片_20200321143335.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAg9_rW8wUowOT-1QQwhAY4iwQ!600x600.jpg) ![微信图片_20200321143341.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAg9_rW8wUo6c3pgwQwjAY49gM!600x600.jpg) 在经历了一个月的 艰苦拍摄后 我们终于 完成了这部剧的拍摄！ 故事讲述的是发生在陆河七、八十年代陆河艰苦创业，事业有成最后回家乡投资发展的故事。剧中的主人翁陈杰家庭非常贫困，为了生存，为了创业，他决定外出寻找机会，通过几十年的打拼，吃尽了苦头，饱受过人间冷暖，如今事业有成，回想起曾经与自己一起长大的伙伴情结，老师曾经敦敦的教诲，回想起家乡人民曾经对自己的帮助，陈杰决定回家乡陆河投资发展，回报家乡。 ![微信图片_20200321143734.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAgyuzW8wUogN-EwQcwhAY4gQY!600x600.jpg) ![微信图片_20200321143740.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAgyezW8wUorpuRtgcwyAQ4qwU.jpg) ![微信图片_20200321143747.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAgyuzW8wUo6tX5xAYwuAg4uQU!600x600.jpg) （年轻帅气的陆河新生代导演彭家轩携手新戏与香港著名演员林子雄，黄一山等合作。并且带着作品《我的村我的家》出席了杭州首屆紹兴柯桥新鋭电影节。） ![微信图片_20200321144040.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAg9e3W8wUoycO3PjC4CDikCg!700x700.jpg)
                         </div>
 
                     </div>
@@ -72,11 +109,11 @@
                     </div>
                     <div class="FenGe"></div>
                     <div class="information_item_content">
-                        <a class="information_item_content_head"  href="details.html">
-                            重磅消息！华侨城螺溪谷强势入驻陆河微生活商城，五一
+                        <a class="information_item_content_head"  href="details1.html" id="details1">
+                            重磅消息！华侨城螺溪谷强势入驻陆河微生活商城，五一期间优
                         </a>
-                        <div class="information_item_content_introduce">
-                            客家民宿是由两座废弃民宅改造而成，包含15间客房。民宿的设计保留了客家民居：“半月池”“天井院”“抬梁穿斗”的传统格局，同时考虑现代人们对居住环境舒适性的需要，优化了通风、采光和保暖功能。房间类型看书，写字，办公，交友商务，休闲，游玩，娱乐...
+                        <div class="information_item_content_introduce" id="details1_1">
+                            客家民宿 是由两座废弃民宅改造而成，包含15间客房。 民宿的设计保留
 
                         </div>
                     </div>
@@ -88,11 +125,11 @@
                     </div>
                     <div class="FenGe"></div>
                     <div class="information_item_content">
-                        <a class="information_item_content_head"  href="details.html">
-                            广信药业，合作共赢，创业起航，众志成城，诚邀期待您加盟与合作
+                        <a class="information_item_content_head"  href="details2.html" id="details2">
+                            这56个陆河地名，你能否认识8个
                         </a>
-                        <div class="information_item_content_introduce">
-                            　汕尾市国荣广信药业连锁店有限公司，成立于2013年8月
+                        <div class="information_item_content_introduce" id="details2_2">
+                            中华文化是博大精深的，汉字传承了6000多年。 从甲骨文开始，经历金文、大篆、小篆、隶书、草书、楷书到最后的行书，每一次演变都有一段历史。 在我们陆河，一些村庄取名字，除了有历史因素外，也饱含着村庄文化的魅力。 很多村庄的起源，要追忆到几百甚至上千年前。 因为当时的文明、民间故事，只能通过纸和笔来记录，或者口口相传，经过岁月的过滤，保留下来的并不完整。 小编最近查资料的时候发现，我们陆河有很多有趣的地名。 其中，以动物命名的地方有： 羊跳石、马公寨、牛牯头、黄狗坪、猫子寮、石马、猪麻嶂、鹿林、狐狸凹、鸡啼寮、鸭麻坑、鹅公纪、百劳窝、燕子岩、雉鸡窝、鹞婆嘴、凤凰山、鹊上村、凫鹤岗、雁塘、南蛇湖、龟爪地、虫另塘、蛤麻地、老蟹目凸、虾麻井、鲤鱼山、滑地（塘虱）。 还有以植物命名的地方。 红花坪、黄布寨、蓝田、白石子、赤花屯、橙坑、乌坭坑、青山子、桃子垄、梅子坝、李坑、梨树下、桔子凹、杨梅寨、柑园、油柑坪、菠萝坑、甜瓜寮、当梨排、柿子坝。 还有以食物命名的地方，比如： 烟皮窝、茶山嶂、酒缸窝，米程岗、板子岗、糍粑石、冷饭坑、馒头山。 ![微信图片_20200316142527.jpg](http://20704548.s21i.faiusr.com/2/ABUIABACGAAgr7i88wUo6JCvzgYwgAU4oAM.jpg) 社会的发展，倒逼着人们使劲的奔跑，老旧的东西，不能产出经济效益，自然被人们所遗弃。 少年的肩膀，什么家国仇恨，浩然正气，都不要急，先挑起故土的一砖一瓦。多听长辈讲故事，然后把故事再讲给孩子听，这是最通俗的传承。 这56个地方名字的起源，就是一个很好的课题。 小编抛砖引玉，有知悉的朋友，请在评论区给我们留言，另外，按照惯例，文末点个“在看”，谢谢你对虎妞一如既往的支持
                         </div>
                     </div>
                 </div>
@@ -100,42 +137,42 @@
         </div>
         <div class="new_conten">
             <div class="new_conten_item">
-            <div class="new_conte_head"><a href="" class="new_conte_head_a"> 陆河首部方言剧《我的村，我的家》就要走进你的视野了，你准备好了吗？</a></div>
+            <div class="new_conte_head"><a href="details.html" class="new_conte_head_a" id="new_1" target="_blank"> 111陆河首部方言剧《我的村，我的家》就要走进你的视野了，你准备好了吗？</a></div>
             <div class="new_conten_body">
-                <div class="new_conten_img"><a href="details.html"><img src="./image/information/1.jpg" class="new_conten_img"></a></div>
+                <div class="new_conten_img"><a href="details.html" target="_blank"><img src="./image/information/1.jpg" class="new_conten_img" id="new_img1"></a></div>
                 <div class="new_conten_text">
-                    <div class="new_conten_text_one">这一次，陆河首部方言剧《我的村，我的家》终于快要走进大家的视野里了。小编可以说是相当激动了，毕竟这是我们大陆河的第一部方言剧！拍摄前的筹备，寻找合适的演员，寻找志同道合的团队，寻找所有能让这部剧变得更加完美的因素，我们花了一年多近两年的时间</div>
+                    <div class="new_conten_text_one" id="new_1_1">这一次，陆河首部方言剧《我的村，我的家》终于快要走进大家的视野里了。小编可以说是相当激动了，毕竟这是我们大陆河的第一部方言剧！拍摄前的筹备，寻找合适的演员，寻找志同道合的团队，寻找所有能让这部剧变得更加完美的因素，我们花了一年多近两年的时间</div>
                     <div class="new_conten_text_two">2020-03-17</div>
                 </div>
             </div>
         </div>
         <div class="new_conten_item">
-            <div class="new_conte_head"><a href="" class="new_conte_head_a">重磅消息！华侨城螺溪谷强势入驻陆河微生活商城，五一期间优惠抢购不断，带上你的伴侣来抢购吧！
+            <div class="new_conte_head"><a href="details1.html" class="new_conte_head_a" id="new_2" target="_blank">重磅消息！华侨城螺溪谷强势入驻陆河微生活商城，五一期间优惠抢购不断，带上你的伴侣来抢购吧！
             </a></div>
             <div class="new_conten_body">
-                <div class="new_conten_img"><a href="details.html"><img src="./image/information/2.jpg" class="new_conten_img"></a></div>
+                <div class="new_conten_img"><a href="details1.html" target="_blank"><img src="./image/information/2.jpg" class="new_conten_img" id="new_img2"></a></div>
                 <div class="new_conten_text">
-                    <div class="new_conten_text_one">客家民宿是由两座废弃民宅改造而成，包含15间客房。民宿的设计保留了客家民居：“半月池”“天井院”“抬梁穿斗”的传统格局，同时考虑现代人们对居住环境舒适性的需要，优化了通风、采光和保暖功能。房间类型看书，写字，办公，交友商务，休闲，游玩，娱乐</div>
+                    <div class="new_conten_text_one" id="new_2_2">客家民宿是由两座废弃民宅改造而成，包含15间客房。民宿的设计保留了客家民居：“半月池”“天井院”“抬梁穿斗”的传统格局，同时考虑现代人们对居住环境舒适性的需要，优化了通风、采光和保暖功能。房间类型看书，写字，办公，交友商务，休闲，游玩，娱乐</div>
                     <div class="new_conten_text_two">2020-03-17</div>
                 </div>
             </div>
         </div>
         <div class="new_conten_item">
-            <div class="new_conte_head"><a href="" class="new_conte_head_a"> 这56个陆河地名，你能否认识8个</a></div>
+            <div class="new_conte_head"><a href="details2.html" class="new_conte_head_a" id="new_3"> 这56个陆河地名，你能否认识8个</a></div>
             <div class="new_conten_body">
-                <div class="new_conten_img"><a href="details.html"><img src="./image/information/3.jpg" class="new_conten_img"></a></div>
+                <div class="new_conten_img"><a href="details2.html" target="_blank"><img src="./image/information/3.jpg" class="new_conten_img" id="new_img3"></a></div>
                 <div class="new_conten_text">
-                    <div class="new_conten_text_one">中华文化是博大精深的，汉字传承了6000多年。从甲骨文开始，经历金文、大篆、小篆、隶书、草书、楷书到最后的行书，每一次演变都有一段历史。在我们陆河，一些村庄取名字，除了有历史因素外，也饱含着村庄文化的魅力。很多村庄的起源，要追忆到几百甚至上</div>
+                    <div class="new_conten_text_one" id="new_3_3">中华文化是博大精深的，汉字传承了6000多年。从甲骨文开始，经历金文、大篆、小篆、隶书、草书、楷书到最后的行书，每一次演变都有一段历史。在我们陆河，一些村庄取名字，除了有历史因素外，也饱含着村庄文化的魅力。很多村庄的起源，要追忆到几百甚至上</div>
                     <div class="new_conten_text_two">2020-03-17</div>
                 </div>
             </div>
         </div>
         <div class="new_conten_item">
-            <div class="new_conte_head"><a href="" class="new_conte_head_a">  报名方式 | 陆河举办梅花节系列活动之摄影大赛活动详情</a></div>
+            <div class="new_conte_head"><a href="details3.html" class="new_conte_head_a" id="new_4" target="_blank">  报名方式 | 陆河举办梅花节系列活动之摄影大赛活动详情</a></div>
             <div class="new_conten_body">
-                <div class="new_conten_img"><a href="details.html"><img src="./image/information/4.jpg" class="new_conten_img"></a></div>
+                <div class="new_conten_img"><a href="details3.html" target="_blank"><img src="./image/information/4.jpg" class="new_conten_img" id="new_img4"></a></div>
                 <div class="new_conten_text">
-                    <div class="new_conten_text_one">导读：为更好的宣传陆河，深化开发陆河的旅游特色，丰富游客的可参与性活动，增加陆河旅游人气，陆河举办梅花节系列活动之摄影大赛活动。活动1、反映陆河梅花节为主题的系列活动场景“梅园倩影”模特风采；活动2、反映陆河梅花为主的人文风情、文物古</div>
+                    <div class="new_conten_text_one" id="new_4_4">导读：为更好的宣传陆河，深化开发陆河的旅游特色，丰富游客的可参与性活动，增加陆河旅游人气，陆河举办梅花节系列活动之摄影大赛活动。活动1、反映陆河梅花节为主题的系列活动场景“梅园倩影”模特风采；活动2、反映陆河梅花为主的人文风情、文物古</div>
                     <div class="new_conten_text_two">2020-03-17</div>
                 </div>
             </div>

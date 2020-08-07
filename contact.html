@@ -8,7 +8,52 @@
     <link rel="stylesheet" href="./contact.css">
     <script src="//imgcache.qq.com/qcloud/tcbjs/1.10.6/tcb.js"></script>
     <script src="./functions/main.js"></script>
-    <script src="./moment.js"></script>
+    <script>
+        const app = tcb.init({
+            env: 'mc-z-153342'  // 此处填入你的环境ID
+        });
+
+
+        window.onload = function () {
+            app.auth({
+                persistence: 'session' //在窗口关闭时清除身份验证状态
+            })
+                .anonymousAuthProvider()
+                .signIn()   //AnonymousAuthProvider.signIn() 匿名登录云开发
+                .then(() => {
+                    console.log("登录成功11") //登录成功
+                    const name = document.getElementById('name');
+                    const email = document.getElementById('email');
+                    const yewu = document.getElementById('yewu');
+                    var addDataButton = document.getElementById("add-button")
+
+                    addDataButton.addEventListener("click", function (e) {
+                        console.log(e)
+                        e.preventDefault()
+                        const db = app.database();
+                        name1 = name.value
+                        email1 = email.value
+                        yewu1 = yewu.value
+
+                        if (name1 !== '' && email1 !== '' & yewu1 !== '') {
+                            db.collection('form').add({
+                                name: name1,
+                                email: email1,
+                                yewu: yewu1
+                            })
+                        }
+
+                    });
+
+
+                }).catch(err => {
+                    console.log("登录失败", err) //登录失败
+                })
+            env: 'mc-z-153342'  // 此处填入你的环境ID
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -51,68 +96,68 @@
         <div><img src="./image/about/background_1.png"></div>
         <div class="contact_two">联系我们 享专业服务</div>
         <div class="contact_three">我们努力创造，用心服务，相信在未来</div>
-        <form>
+        <form id="form">
             <div class="from_conten">
                 <div class="from_item">
                     <table class="from_text" for="name">名字</table>
-                    <input type="text" id="name" >
+                    <input type="text" id="name">
                 </div>
                 <div class="from_item">
                     <table class="from_text" for="email">邮箱</table>
-                    <input type="email" ">
+                    <input type="email" id="email">
                 </div>
-                <div class="from_item">
+                <div class=" from_item">
                     <table class="from_text" for="yewu">资讯业务</table>
-                    <input type="text" id="yewu" >
+                    <input type="text" id="yewu">
                 </div>
-                <button>提交</button>
+                <button id="add-button">提交</button>
             </div>
-
         </form>
+
     </div>
 
 
-
-
     <!-- 尾部 -->
-<div class="footer">
+    <div class="footer">
         <div class="container">
-          <div class="ft_container"> 
-          <div class="Telephone">
-            <div class="Telephone_name">联系热线：</div>
-            <div class="Telephone_number">18946902313</div>
-            <div class="Telephone_name">咨询微信：</div>
-            <div class="Telephone_number">18946902313</div>
-          </div>
-          <div class="footer_navigation">
-            <div class="footer_navigation_one">
-            <a href="./index.html">首页</a>
-            <a href="">/</a>
-            <a href="./about.html">关于我们</a>
-            <a href="">/</a>
-            <a href="./product.html">产品与服务</a>
-            <a href="">/</a>
-            <a href="./information.html">新闻资讯</a>
-            <a href="">/</a>
-            <a href="">联系我们</a>
-          </div>
-          <div class="footer_navigation_two">
-            <div>联系地址： 广东省汕尾市陆河县城中心城滨河路吉康华苑南门75号</div>
-          </div>
-          <div class="footer_navigation_three">
-            <div>©版权所有陆河达邦文化传媒有限公司
+            <div class="ft_container">
+                <div class="Telephone">
+                    <div class="Telephone_name">联系热线：</div>
+                    <div class="Telephone_number">18946902313</div>
+                    <div class="Telephone_name">咨询微信：</div>
+                    <div class="Telephone_number">18946902313</div>
+                </div>
+                <div class="footer_navigation">
+                    <div class="footer_navigation_one">
+                        <a href="./index.html">首页</a>
+                        <a href="">/</a>
+                        <a href="./about.html">关于我们</a>
+                        <a href="">/</a>
+                        <a href="./product.html">产品与服务</a>
+                        <a href="">/</a>
+                        <a href="./information.html">新闻资讯</a>
+                        <a href="">/</a>
+                        <a href="">联系我们</a>
+                    </div>
+                    <div class="footer_navigation_two">
+                        <div>联系地址： 广东省汕尾市陆河县城中心城滨河路吉康华苑南门75号</div>
+                    </div>
+                    <div class="footer_navigation_three">
+                        <div>©版权所有陆河达邦文化传媒有限公司
+                        </div>
+                        <img src="./image/huizhang.png" alt=""><a id="del_a"
+                            href="http://icp.chinaz.com/home/info?host=lhwsh.net" target='_blank'> 粤ICP备19070563号-1</a>
+                    </div>
+                </div>
+                <div class="code">
+                    <img src="./image/QR.jpg">
+                    <span>关注公众号</span>
+                    <span>了解更多资讯</span>
+                </div>
             </div>
-            <img src="./image/huizhang.png" alt=""><a id="del_a" href="http://icp.chinaz.com/home/info?host=lhwsh.net" target='_blank'> 粤ICP备19070563号-1</a>
-          </div>
-          </div>
-          <div class="code">
-            <img src="./image/QR.jpg">
-            <span>关注公众号</span>
-            <span>了解更多资讯</span>
-          </div>
         </div>
-      </div>
-    </div> 
+    </div>
+
 </body>
 
 </html>

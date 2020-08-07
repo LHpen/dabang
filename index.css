@@ -86,21 +86,18 @@
 /* 轮播图 */
 .wrap {
     width: 100%;
-    height: 800px;
+    height: 90vh;
     position: relative;
-    overflow: hidden;
 
 }
 .list {
     width: 100%;
-    height: 400px;
     list-style: none;
-    position: relative;
-    
 }
+
 .list img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -140,7 +137,7 @@
     list-style: none;
     position: absolute;
     bottom: 10px;
-    right: 950px;
+    right: 50%;
     z-index: 120;
 }
 
@@ -282,54 +279,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .evolution {
-    padding-top: 80px;
+    position: relative;
 }
 
 .evolution_text {
-    position: relative;
-    left: 410px;
-    bottom: 200px;
+    position: absolute;
+    left: 70px;
+    bottom: 100px;
     color: #fff;
     display: inline;
 }
 .evolution_text span{
+    margin-right: 85px;
     display: inline-block;
-    margin-right: 80px;
-    width: 160px;
+    width: 150px;
+
+}
+
+.evolution_text span:last-child{
+
+    width: 80px;
 }
 
 .evolution_span {
-    position: relative;
+    position: absolute;
     left: 380px;
     bottom: 200px;
     color: #fff;
 }
+
 .evolution_text_1 {
-    position: relative;
-    left: 380px;
-    bottom: 100px;
-    color: #fff;
-    display: inline;
-
-}
-
-.evolution_text_1{
     position: absolute;
-    bottom: 45px;
-
+    bottom: -30px;
+    left: 30px;
+    color: #fff;
 }
+
 
 .evolution_text_1 span{
-    margin-right: 180px;
+    margin-right: 170px;
     font-size: 17px;
 }
 .evolution_text_2{
-    position: relative;
-    left: 660px;
-    bottom: 350px;
+    position: absolute;
+    left: 310px;
+    bottom: 190px;
     color: #fff;
     width: 200px;
 }
@@ -385,6 +383,7 @@
     width: 300px;
     overflow:hidden;
     white-space:nowrap;
+    text-decoration: none;
 }
  
 .Information_item a:hover {

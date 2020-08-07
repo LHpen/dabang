@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="information.css">
     <link rel="stylesheet" href="details.css">
     <title>detalist</title>
@@ -20,14 +19,14 @@
         .auth()
         .signInAnonymously()
         .then(() => {
-        //   alert("登录云开发成功！");
+          // alert("登录云开发成功！");
           const db = app.database();
           const userDb = db.collection('article');
           userDb.get().then(item => {
-              console.log("数据库返回",item.data[0])
-              document.getElementById('title').innerHTML= item.data[0].title
-             document.getElementById('createTime').innerHTML= item.data[0].createTime
-            document.getElementById('content') .innerHTML = item.data[0].content
+              console.log("数据库返回",item.data[1])
+              document.getElementById('title').innerHTML= item.data[1].title
+             document.getElementById('createTime').innerHTML= item.data[1].createTime
+            document.getElementById('content') .innerHTML = item.data[1].content
             $(document).ready(function() {
             var content = $("#content").text(); //获取md文本内容
             var converter = new showdown.Converter(); //初始化转换器

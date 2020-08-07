@@ -175,6 +175,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #333333;
+    text-decoration: none;
 }
 
 .information_item_content_head:hover {
